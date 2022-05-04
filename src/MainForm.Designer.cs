@@ -1,6 +1,6 @@
 ﻿namespace CalculateBMI
 {
-    partial class Form1
+    partial class MainForm
     {
         /// <summary>
         /// Required designer variable.
@@ -28,31 +28,31 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.numericUpDown_Height = new System.Windows.Forms.NumericUpDown();
-            this.label3 = new System.Windows.Forms.Label();
+            this.label_Overall_Result = new System.Windows.Forms.Label();
+            this.label_BMI_Result = new System.Windows.Forms.Label();
+            this.button_Calculate = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
             this.numericUpDown_Weight = new System.Windows.Forms.NumericUpDown();
             this.label5 = new System.Windows.Forms.Label();
-            this.button_Calculate = new System.Windows.Forms.Button();
-            this.label_BMI_Result = new System.Windows.Forms.Label();
-            this.label_Overall_Result = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.numericUpDown_Height = new System.Windows.Forms.NumericUpDown();
+            this.label2 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown_Height)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown_Weight)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown_Height)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.BackColor = System.Drawing.Color.DarkGray;
-            this.label1.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Black;
             this.label1.Location = new System.Drawing.Point(12, 9);
             this.label1.Name = "label1";
@@ -74,6 +74,7 @@
             // groupBox1
             // 
             this.groupBox1.Controls.Add(this.pictureBox1);
+            this.groupBox1.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.Location = new System.Drawing.Point(12, 211);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(469, 212);
@@ -92,6 +93,7 @@
             this.groupBox2.Controls.Add(this.label3);
             this.groupBox2.Controls.Add(this.numericUpDown_Height);
             this.groupBox2.Controls.Add(this.label2);
+            this.groupBox2.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox2.Location = new System.Drawing.Point(12, 51);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(469, 134);
@@ -99,62 +101,54 @@
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Calculate BMI";
             // 
-            // label2
+            // label_Overall_Result
             // 
-            this.label2.BackColor = System.Drawing.Color.Gainsboro;
-            this.label2.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.Black;
-            this.label2.Location = new System.Drawing.Point(17, 25);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(132, 20);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "Select Your Height";
-            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label_Overall_Result.BackColor = System.Drawing.Color.Silver;
+            this.label_Overall_Result.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label_Overall_Result.ForeColor = System.Drawing.Color.White;
+            this.label_Overall_Result.Location = new System.Drawing.Point(16, 86);
+            this.label_Overall_Result.Name = "label_Overall_Result";
+            this.label_Overall_Result.Size = new System.Drawing.Size(439, 28);
+            this.label_Overall_Result.TabIndex = 9;
+            this.label_Overall_Result.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // numericUpDown_Height
+            // label_BMI_Result
             // 
-            this.numericUpDown_Height.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.numericUpDown_Height.Location = new System.Drawing.Point(152, 25);
-            this.numericUpDown_Height.Maximum = new decimal(new int[] {
-            250,
-            0,
-            0,
-            0});
-            this.numericUpDown_Height.Minimum = new decimal(new int[] {
-            10,
-            0,
-            0,
-            0});
-            this.numericUpDown_Height.Name = "numericUpDown_Height";
-            this.numericUpDown_Height.Size = new System.Drawing.Size(44, 20);
-            this.numericUpDown_Height.TabIndex = 2;
-            this.numericUpDown_Height.Value = new decimal(new int[] {
-            175,
-            0,
-            0,
-            0});
+            this.label_BMI_Result.BackColor = System.Drawing.Color.Gainsboro;
+            this.label_BMI_Result.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label_BMI_Result.ForeColor = System.Drawing.Color.Black;
+            this.label_BMI_Result.Location = new System.Drawing.Point(323, 26);
+            this.label_BMI_Result.Name = "label_BMI_Result";
+            this.label_BMI_Result.Size = new System.Drawing.Size(132, 43);
+            this.label_BMI_Result.TabIndex = 8;
+            this.label_BMI_Result.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // label3
+            // button_Calculate
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(196, 28);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(21, 13);
-            this.label3.TabIndex = 3;
-            this.label3.Text = "cm";
+            this.button_Calculate.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button_Calculate.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button_Calculate.Location = new System.Drawing.Point(224, 26);
+            this.button_Calculate.Name = "button_Calculate";
+            this.button_Calculate.Size = new System.Drawing.Size(85, 43);
+            this.button_Calculate.TabIndex = 7;
+            this.button_Calculate.Text = "CALCULATE";
+            this.button_Calculate.UseVisualStyleBackColor = true;
+            this.button_Calculate.Click += new System.EventHandler(this.button_Calculate_Click);
             // 
             // label4
             // 
             this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.Location = new System.Drawing.Point(196, 51);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(19, 13);
+            this.label4.Size = new System.Drawing.Size(20, 13);
             this.label4.TabIndex = 6;
             this.label4.Text = "kg";
             // 
             // numericUpDown_Weight
             // 
             this.numericUpDown_Weight.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.numericUpDown_Weight.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.numericUpDown_Weight.Location = new System.Drawing.Point(152, 48);
             this.numericUpDown_Weight.Maximum = new decimal(new int[] {
             300,
@@ -167,7 +161,7 @@
             0,
             0});
             this.numericUpDown_Weight.Name = "numericUpDown_Weight";
-            this.numericUpDown_Weight.Size = new System.Drawing.Size(44, 20);
+            this.numericUpDown_Weight.Size = new System.Drawing.Size(44, 22);
             this.numericUpDown_Weight.TabIndex = 5;
             this.numericUpDown_Weight.Value = new decimal(new int[] {
             80,
@@ -178,50 +172,62 @@
             // label5
             // 
             this.label5.BackColor = System.Drawing.Color.Gainsboro;
-            this.label5.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.Black;
-            this.label5.Location = new System.Drawing.Point(17, 48);
+            this.label5.Location = new System.Drawing.Point(17, 49);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(132, 20);
             this.label5.TabIndex = 4;
             this.label5.Text = "Select Your Weight";
             this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // button_Calculate
+            // label3
             // 
-            this.button_Calculate.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button_Calculate.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button_Calculate.Location = new System.Drawing.Point(224, 25);
-            this.button_Calculate.Name = "button_Calculate";
-            this.button_Calculate.Size = new System.Drawing.Size(85, 43);
-            this.button_Calculate.TabIndex = 7;
-            this.button_Calculate.Text = "CALCULATE";
-            this.button_Calculate.UseVisualStyleBackColor = true;
-            this.button_Calculate.Click += new System.EventHandler(this.button_Calculate_Click);
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(196, 28);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(21, 13);
+            this.label3.TabIndex = 3;
+            this.label3.Text = "cm";
             // 
-            // label_BMI_Result
+            // numericUpDown_Height
             // 
-            this.label_BMI_Result.BackColor = System.Drawing.Color.Gainsboro;
-            this.label_BMI_Result.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label_BMI_Result.ForeColor = System.Drawing.Color.Black;
-            this.label_BMI_Result.Location = new System.Drawing.Point(323, 25);
-            this.label_BMI_Result.Name = "label_BMI_Result";
-            this.label_BMI_Result.Size = new System.Drawing.Size(132, 43);
-            this.label_BMI_Result.TabIndex = 8;
-            this.label_BMI_Result.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.numericUpDown_Height.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.numericUpDown_Height.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numericUpDown_Height.Location = new System.Drawing.Point(152, 25);
+            this.numericUpDown_Height.Maximum = new decimal(new int[] {
+            250,
+            0,
+            0,
+            0});
+            this.numericUpDown_Height.Minimum = new decimal(new int[] {
+            10,
+            0,
+            0,
+            0});
+            this.numericUpDown_Height.Name = "numericUpDown_Height";
+            this.numericUpDown_Height.Size = new System.Drawing.Size(44, 22);
+            this.numericUpDown_Height.TabIndex = 2;
+            this.numericUpDown_Height.Value = new decimal(new int[] {
+            180,
+            0,
+            0,
+            0});
             // 
-            // label_Overall_Result
+            // label2
             // 
-            this.label_Overall_Result.BackColor = System.Drawing.Color.Silver;
-            this.label_Overall_Result.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label_Overall_Result.ForeColor = System.Drawing.Color.White;
-            this.label_Overall_Result.Location = new System.Drawing.Point(16, 86);
-            this.label_Overall_Result.Name = "label_Overall_Result";
-            this.label_Overall_Result.Size = new System.Drawing.Size(439, 28);
-            this.label_Overall_Result.TabIndex = 9;
-            this.label_Overall_Result.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label2.BackColor = System.Drawing.Color.Gainsboro;
+            this.label2.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.Black;
+            this.label2.Location = new System.Drawing.Point(17, 26);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(132, 20);
+            this.label2.TabIndex = 1;
+            this.label2.Text = "Select Your Height";
+            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // Form1
+            // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -229,19 +235,20 @@
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.label1);
+            this.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.MaximumSize = new System.Drawing.Size(513, 478);
             this.MinimumSize = new System.Drawing.Size(513, 478);
-            this.Name = "Form1";
+            this.Name = "MainForm";
             this.Text = "Calculate BMI";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown_Height)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown_Weight)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown_Height)).EndInit();
             this.ResumeLayout(false);
 
         }
