@@ -42,6 +42,7 @@
             this.label3 = new System.Windows.Forms.Label();
             this.numericUpDown_Height = new System.Windows.Forms.NumericUpDown();
             this.label2 = new System.Windows.Forms.Label();
+            this.lbl_Author = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -75,7 +76,7 @@
             // 
             this.groupBox1.Controls.Add(this.pictureBox1);
             this.groupBox1.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox1.Location = new System.Drawing.Point(12, 211);
+            this.groupBox1.Location = new System.Drawing.Point(12, 194);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(469, 212);
             this.groupBox1.TabIndex = 2;
@@ -227,11 +228,22 @@
             this.label2.Text = "Select Your Height";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // lbl_Author
+            // 
+            this.lbl_Author.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_Author.Location = new System.Drawing.Point(9, 407);
+            this.lbl_Author.Name = "lbl_Author";
+            this.lbl_Author.Size = new System.Drawing.Size(472, 27);
+            this.lbl_Author.TabIndex = 4;
+            this.lbl_Author.Text = "© 2022 Peter Machaj";
+            this.lbl_Author.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(493, 435);
+            this.Controls.Add(this.lbl_Author);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.label1);
@@ -268,6 +280,7 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.NumericUpDown numericUpDown_Height;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label lbl_Author;
     }
 }
 
